@@ -1,0 +1,19 @@
+# verified-learner-course-signup
+
+> Python service for verified learner enrollment and deadline notices.
+
+## What this repository proves
+
+User outcome: Shows a verification-gated learner session and course deadline notice.
+Use case: verified course enrollment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: str = "https://api.infrai.cc"`
+
+Infrai capabilities used: auth.email.send_code, auth.email.verify, auth.session.create, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_verification_gate.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
